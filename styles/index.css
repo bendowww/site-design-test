@@ -1,0 +1,673 @@
+/* Déclaration de la police variable */
+
+@font-face {
+    font-family: 'ABCOracle';
+    src: url('../fonts/ABCOracleVariable-Trial.woff2') format('woff2');
+    font-weight: 100 900;
+    font-style: normal;
+}
+
+html {
+    font-size: 16px;
+    /* Pas besoin de overflow: hidden ici */
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    /* Permet le défilement vertical */
+    scroll-behavior: smooth !important;
+    /* Assure un défilement fluide par défaut */
+}
+
+
+/* Autres règles CSS restent inchangées */
+
+
+/* Configuration globale */
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    font-family: 'ABCOracle', sans-serif;
+    background-color: #F5F5F5;
+    /* Applique la couleur de fond à toute la page */
+    margin: 0;
+    /* Supprime la marge par défaut */
+    padding: 0;
+    /* Supprime le padding par défaut */
+    font-family: 'ABCOracle', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Assure un calcul cohérent des dimensions */
+}
+
+header {
+    max-width: 1216px;
+    /* Largeur fixe */
+    width: 100%;
+    text-align: center;
+    /* Centrage du contenu */
+    margin: 0px auto;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1216px;
+    width: 100%;
+    padding-top: 1.5rem;
+    /* Reduced from 1.5rem */
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ededed;
+    margin-left: 20px;
+    font-size: 16px;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: flex-end;
+    /* Aligne les éléments à droite */
+    align-items: center;
+    /* Centre les liens verticalement par rapport à la hauteur du paragraphe */
+    gap: 4px;
+    /* Espace entre les liens */
+    background-color: #ffffff;
+    padding: 4px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+#work {
+    background-color: #EDEDED;
+    /* Fond blanc */
+    padding: 6px 12px;
+    /* Padding vertical de 6px et padding latéral de 12px */
+    color: #333;
+    /* Couleur du texte */
+    text-decoration: none;
+    /* Supprimer le soulignement du lien */
+    display: inline-block;
+    /* Permet au lien d'avoir un fond et un padding */
+    border-radius: 8px;
+    font-size: .875rem;
+    line-height: 1.25rem;
+}
+
+#contact {
+    background-color: #ffffff;
+    /* Fond blanc */
+    padding: 6px 12px;
+    /* Padding vertical de 6px et padding latéral de 12px */
+    color: #545454;
+    /* Couleur du texte */
+    text-decoration: none;
+    /* Supprimer le soulignement du lien */
+    display: inline-block;
+    /* Permet au lien d'avoir un fond et un padding */
+    border-radius: 8px;
+    font-size: .875rem;
+    line-height: 1.25rem;
+}
+
+#search {
+    padding: 6px 12px;
+    text-decoration: none;
+}
+
+#contact:hover {
+    color: #000000;
+    /* Poids au survol */
+    transition: 1s;
+}
+
+[data-lucide="search"] {
+    stroke: #545454;
+    /* Couleur de votre choix */
+    stroke-width: 2;
+    /* Épaisseur du trait */
+    width: 16px;
+    display: flex;
+}
+
+
+/* Si vous voulez un effet au survol */
+
+[data-lucide="search"]:hover {
+    stroke: #000000;
+    /* Couleur au survol */
+    transition: 1s;
+}
+
+.header-nav a {
+    text-decoration: none;
+    /* Supprime la décoration du lien */
+    color: #545454;
+    /* Couleur du texte */
+    font-size: 1rem;
+    /* Taille du texte */
+    font-weight: 375;
+}
+
+.header-nav a:hover {
+    color: #000000;
+    /* Poids au survol */
+    transition: .5s;
+}
+
+.site-title .first-word {
+    font-weight: 450;
+    /* Mettre le premier mot en font-weight 500 */
+}
+
+.site-title {
+    font-size: 16px;
+    font-weight: 375;
+    line-height: 1.5rem;
+    letter-spacing: -0.004rem;
+    margin-bottom: 0;
+    text-align: left;
+    color: #333;
+    max-width: 335px;
+    margin-left: 20px;
+}
+
+
+/* Section principale */
+
+.section {
+    max-width: 1368px;
+    /* Largeur fixe de l'image */
+    width: 100%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 16px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    /* Centrage horizontal de la section */
+    /* Ajoute une marge de 24px en haut de la section */
+    /* Ajoute un padding en haut de la section */
+}
+
+.image-holder {
+    width: 1368px;
+    /* Largeur fixe */
+    height: 769px;
+    /* Hauteur fixe */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    /* Coins arrondis */
+    overflow: hidden;
+    display: inline-block;
+    /* Assure un comportement prévisible */
+    position: relative;
+    /* Nécessaire si d'autres styles sont ajoutés */
+}
+
+.image-holder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    /* Supprime les marges ou espaces indésirables */
+    transition: transform 0.4s ease;
+    /* Transition fluide pour le zoom */
+    width: 100%;
+    /* Assure que l'image s'ajuste au conteneur */
+    height: auto;
+    /* Maintient les proportions de l'image */
+    /* Remplit l'espace */
+}
+
+.image-holder:hover img {
+    transform: scale(1.05);
+    /* Zoom de 5 % */
+}
+
+.image-holder video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    /* Supprime les marges ou espaces indésirables */
+    transition: transform 0.4s ease;
+    /* Transition fluide pour le zoom */
+    width: 100%;
+    /* Assure que l'image s'ajuste au conteneur */
+    height: auto;
+    /* Maintient les proportions de l'image */
+    /* Remplit l'espace */
+}
+
+.image-holder:hover video {
+    transform: scale(1.05);
+    /* Zoom de 5 % */
+}
+
+.text-content {
+    max-width: 1368px;
+    /* Alignement avec l'image */
+    width: 100%;
+    padding-left: 0;
+}
+
+.text-content h1 {
+    font-size: 0.875rem;
+    /* Taille du texte */
+    font-weight: 450;
+    /* Épaisseur du texte */
+    line-height: 1.125rem;
+    /* Hauteur de ligne */
+    letter-spacing: -0.004rem;
+    /* Espacement entre les lettres */
+    margin-bottom: 2px;
+    /* Ajoute un espace entre le titre et le paragraphe */
+    padding-left: 0.75rem;
+    /* Ajoute un décalage à gauche */
+}
+
+.text-content p {
+    font-size: 0.875rem;
+    /* Taille du texte */
+    font-weight: 375;
+    /* Épaisseur légèrement réduite */
+    line-height: 1.125rem;
+    /* Hauteur de ligne */
+    letter-spacing: -0.004rem;
+    /* Espacement entre les lettres */
+    margin-top: 0;
+    /* Supprime l'espace par défaut au-dessus */
+    color: #333;
+    /* Couleur inchangée */
+    padding-left: 0.75rem;
+    /* Ajoute un décalage à gauche */
+    max-width: 350px;
+    /* Limite la largeur du paragraphe */
+    word-wrap: break-word;
+    /* Force les mots à revenir à la ligne */
+    overflow-wrap: break-word;
+    /* Compatible avec les navigateurs modernes */
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    /* Centre horizontalement */
+    align-items: center;
+    /* Centre verticalement */
+    text-align: center;
+    /* Centre le texte */
+    font-size: 16px;
+    /* Taille de la police */
+    color: #999;
+    /* Couleur du texte */
+    padding: 24px 0 24px;
+}
+
+
+/* Box Contact*/
+
+
+/* Navbar et site-title */
+
+.navbar {
+    position: relative;
+    /* Pour que la box de contact soit positionnée correctement sous le nav */
+}
+
+.site-title {
+    font-size: 1.25rem;
+    margin-bottom: 16px;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 4px;
+    background-color: #ffffff;
+    padding: 4px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+
+/* Styles pour les liens */
+
+#contact {
+    position: relative;
+    /* Permet d'utiliser z-index sur cet élément */
+    z-index: 1001;
+    /* Assure que le bouton est au-dessus de l'overlay */
+    background-color: #ffffff;
+    padding: 6px 12px;
+    color: #545454;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 8px;
+    font-size: .875rem;
+    line-height: 1.25rem;
+}
+
+#contact:hover {
+    color: #000000;
+    transition: 1s;
+}
+
+
+/* La box Contact */
+
+.contact-box {
+    position: absolute;
+    display: none;
+    /* Masqué par défaut */
+    width: 240px;
+    height: 129px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    transform: scale(.9);
+    /* Animation au départ */
+    opacity: 0;
+    /* Invisible au départ */
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    /* Animation smooth */
+}
+
+.contact-box.show {
+    display: block;
+    /* Affiché lorsque la classe `show` est ajoutée */
+    transform: scale(1);
+    /* Passe à sa taille normale */
+    opacity: 1;
+    /* Devient visible */
+}
+
+.contact-content p {
+    margin: 5px 0;
+    font-size: 0.875rem;
+}
+
+.social-links {
+    display: flex;
+    /* Active Flexbox pour les liens */
+    gap: 16px;
+    /* Espacement horizontal entre les liens */
+    justify-content: flex-start;
+    /* Aligne les liens à gauche */
+    align-self: flex-end;
+    /* Assure que le bloc est en bas de la boîte */
+    margin-top: 42px;
+    /* Pousse les liens vers le bas de la boîte */
+}
+
+.social-links a {
+    text-decoration: none;
+    color: #545454;
+    margin-right: 10px;
+}
+
+.social-links a:hover {
+    color: #000000;
+}
+
+
+/* L'overlay avec blur */
+
+.overlay {
+    display: none;
+    /* Masqué par défaut */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 999;
+    backdrop-filter: blur(5px);
+    /* Blur effect */
+    transition: 0.3s;
+}
+
+
+/*Contact box inside*/
+
+.contact-content {
+    position: relative;
+}
+
+.contact-p {
+    font-size: 0.875rem;
+    font-weight: 375;
+    line-height: 1.125rem;
+    letter-spacing: -0.004rem;
+    color: #333;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    /* Compatible avec les navigateurs modernes */
+}
+
+.mail-word {
+    text-align: start;
+}
+
+.mail-copy {
+    text-align: start;
+    font-size: 0.875rem;
+    font-weight: 375;
+    line-height: 1.125rem;
+    letter-spacing: -0.004rem;
+    color: #545454;
+    cursor: pointer;
+    position: relative;
+    margin-top: 0;
+}
+
+.mail-copy::after {
+    content: "Click to Copy";
+    /* Texte affiché au survol */
+    position: absolute;
+    /* Positionné par rapport à l'email */
+    left: 0%;
+    /* Place à droite de l'email */
+    top: 50%;
+    /* Aligne verticalement */
+    transform: translate(8px, -50%);
+    /* Décale légèrement pour l'écart */
+    background-color: #f5f5f5;
+    /* Couleur du texte */
+    padding: 4px 8px;
+    /* Espace autour du texte */
+    border-radius: 4px;
+    /* Coins arrondis */
+    font-size: 0.875rem;
+    /* Taille plus petite */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Ombre subtile */
+    opacity: 0;
+    /* Caché par défaut */
+    pointer-events: none;
+    /* Désactive les interactions */
+    transition: opacity 0.3s ease;
+    /* Animation fluide */
+}
+
+.mail-copy:hover+.copy-tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+.copy-tooltip {
+    visibility: hidden;
+    opacity: 0;
+    margin-top: 16px;
+    color: #999;
+    font-size: 0.875rem;
+    font-weight: 375;
+    line-height: 1.125rem;
+    letter-spacing: -0.004rem;
+    transition: opacity 0.2s ease, visibility 0.3s ease;
+    position: absolute;
+    left: 0;
+    /* Aligne à gauche de l'email */
+}
+
+
+/* Bouton retour en haut */
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: white;
+    /* Fond blanc */
+    border: none;
+    /* Pas de contour noir */
+    border-radius: 30%;
+    /* Arrondi de 10% */
+    margin: 6px 12px;
+    /* Padding top/bottom de 6px et left/right de 12px */
+    padding: 6px;
+    cursor: pointer;
+    z-index: 1000;
+    /* Assurer que le bouton soit au-dessus du contenu */
+    visibility: hidden;
+    /* Cacher le bouton au départ */
+    opacity: 0;
+    /* Rendre le bouton transparent au départ */
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    /* Transition douce pour l'apparition/disparition */
+    display: flex;
+    /* Utilisation de Flexbox */
+    justify-content: center;
+    /* Centrer horizontalement */
+    align-items: center;
+    /* Centrer verticalement */
+}
+
+
+/* Effet au survol du bouton */
+
+.scroll-to-top:hover {
+    background-color: #f0f0f0;
+    /* Changer la couleur de fond au survol */
+}
+
+
+/* Style de l'icône */
+
+.scroll-to-top i {
+    font-size: 24px;
+    color: #333;
+    /* Couleur de l'icône */
+}
+
+
+/* Ajouter une transition pour l'apparition du bouton */
+
+.scroll-to-top.show {
+    visibility: visible;
+    /* Rendre visible le bouton */
+    opacity: 1;
+    /* Rendre le bouton opaque */
+}
+
+
+/* Overlay de transition */
+
+.transition-overlay {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: #F5F5F5;
+    z-index: 2000;
+    transition: height 1s ease-in-out;
+}
+
+body.fade-in {
+    opacity: 0;
+    animation: fadeInAnimation 1s forwards;
+}
+
+@keyframes fadeInAnimation {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+/*Fade-in */
+
+.content {
+    opacity: 0;
+    transition: opacity 3s ease-in-out;
+}
+
+.content.fade-in {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/* Responsive */
+
+@media (max-width: 768px) {
+    header {
+        max-width: 90%;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-links a {
+        margin-left: 0;
+        margin-right: 15px;
+        font-size: 14px;
+    }
+    .section {
+        align-items: center;
+        /* Assure le centrage de la section */
+    }
+    .image-holder {
+        width: 90%;
+        /* Toujours centré et fluide */
+        margin: 0 auto;
+        /* Centrage horizontal */
+    }
+    .text-content {
+        max-width: 90%;
+    }
+    .text-content h1 {
+        font-size: 20px;
+    }
+    .text-content p {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,388 @@
+@font-face {
+    font-family: 'ABCOracle';
+    src: url('../fonts/ABCOracleVariable-Trial.woff2') format('woff2');
+    font-weight: 100 900;
+    font-style: normal;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+
+/* Configuration globale */
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    font-family: 'ABCOracle', sans-serif;
+    background-color: #F5F5F5;
+    /* Applique la couleur de fond à toute la page */
+    margin: 0;
+    /* Supprime la marge par défaut */
+    padding: 0;
+    /* Supprime le padding par défaut */
+    font-family: 'ABCOracle', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Assure un calcul cohérent des dimensions */
+}
+
+
+/*Header */
+
+header {
+    max-width: 1216px;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    background-color: white;
+    /* Optionnel : ajoute un fond pour éviter toute transparence */
+    box-sizing: border-box;
+    /* Assure que padding et bordures n'affectent pas la taille */
+    padding: 10px 0;
+    /* Ajuste la hauteur si nécessaire */
+}
+
+
+/*Footer */
+
+.footer {
+    display: flex;
+    justify-content: center;
+    /* Centre horizontalement */
+    align-items: center;
+    /* Centre verticalement */
+    text-align: center;
+    /* Centre le texte */
+    font-size: 16px;
+    /* Taille de la police */
+    color: #999;
+    /* Couleur du texte */
+    padding: 120px 0 24px;
+}
+
+
+/*Navigation */
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1216px;
+    width: 100%;
+    padding-top: 1.5rem;
+    /* Reduced from 1.5rem */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ededed;
+    margin-left: 20px;
+    font-size: 16px;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: flex-end;
+    /* Aligne les éléments à droite */
+    align-items: center;
+    /* Centre les liens verticalement par rapport à la hauteur du paragraphe */
+    gap: 4px;
+    /* Espace entre les liens */
+    background-color: #ffffff;
+    padding: 4px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+#work {
+    background-color: #ffffff;
+    /* Fond blanc */
+    padding: 6px 12px;
+    /* Padding vertical de 6px et padding latéral de 12px */
+    color: #545454;
+    /* Couleur du texte */
+    text-decoration: none;
+    /* Supprimer le soulignement du lien */
+    display: inline-block;
+    /* Permet au lien d'avoir un fond et un padding */
+    border-radius: 8px;
+    font-size: .875rem;
+    line-height: 1.25rem;
+}
+
+#work:hover {
+    background-color: #EDEDED;
+    color: #000000;
+    transition: .3s;
+}
+
+
+/* Hero part */
+
+.hero {
+    display: flex;
+    /* Utilisation de Flexbox */
+    flex-direction: column;
+    /* Aligner les éléments verticalement */
+    align-items: center;
+    /* Centrer le contenu horizontalement */
+    padding-top: 120px;
+    /* Espace au-dessus de la section */
+    text-align: center;
+    /* Centrer le texte */
+    max-width: 800px;
+    /* Largeur maximale pour limiter le texte */
+    margin: 0 auto;
+    /* Centrer horizontalement */
+    padding-bottom: 30px;
+}
+
+.hero-title {
+    font-size: 2rem;
+    line-height: 140%;
+    letter-spacing: -.02rem;
+    font-weight: 450;
+    color: #000000;
+    /* Couleur principale */
+}
+
+.hero-subtitle {
+    font-size: 1.25rem;
+    line-height: 150%;
+    letter-spacing: -.00625rem;
+    font-weight: 350;
+    max-width: 520px;
+    padding-top: 16px;
+    color: #545454;
+}
+
+
+/*Texte Part */
+
+.texte {
+    display: flex;
+    /* Utilisation de Flexbox */
+    flex-direction: column;
+    /* Aligner les éléments verticalement */
+    align-items: center;
+    /* Centrer le contenu horizontalement */
+    padding: 120px 0;
+    /* Espace au-dessus de la section */
+    text-align: center;
+    /* Centrer le texte */
+    max-width: 800px;
+    /* Largeur maximale pour limiter le texte */
+    margin: 0 auto;
+    /* Centrer horizontalement */
+}
+
+.texte-title {
+    font-size: 1.75rem;
+    line-height: 140%;
+    letter-spacing: -.017rem;
+    font-weight: 450;
+    color: #000000;
+    /* Couleur principale */
+}
+
+.texte-subtitle {
+    font-size: 1rem;
+    line-height: 150%;
+    letter-spacing: -.00625rem;
+    font-weight: 350;
+    max-width: 520px;
+    padding-top: 16px;
+    color: #000000;
+}
+
+
+/* Image te video Holder */
+
+.video-holder-section,
+.image-holder-section {
+    display: flex;
+    justify-content: center;
+    /* Centrer horizontalement */
+    align-items: center;
+    /* Centrer verticalement si nécessaire */
+    padding: 20px;
+    /* Espacement autour de la section */
+}
+
+.video-holder,
+.image-holder {
+    width: 1408px;
+    height: 792px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    background-color: black;
+}
+
+video,
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Remplir le holder sans déformer */
+}
+
+
+/* Double image holder */
+
+.double-image-holder-section {
+    display: flex;
+    /* Utilise flexbox pour aligner les conteneurs côte à côte */
+    justify-content: center;
+    /* Centrer les conteneurs horizontalement */
+    align-items: center;
+    /* Centrer les images verticalement */
+    gap: 24px;
+    /* Espacement entre les conteneurs d'images */
+}
+
+.double-image-holder {
+    display: flex;
+    /* Utilisation de flexbox pour que les conteneurs d'images s'alignent horizontalement */
+    width: 100%;
+    /* Largeur complète du conteneur parent */
+    height: 792px;
+    /* Hauteur du conteneur */
+    position: relative;
+    /* Position relative pour les éléments enfants */
+    gap: 8px;
+}
+
+.image-container-double {
+    width: 700px;
+    /* Chaque conteneur d'image occupe 50% de la largeur du parent */
+    height: 100%;
+    /* La hauteur des images prend 100% de la hauteur du conteneur */
+    overflow: hidden;
+    /* Cache les débordements */
+    display: flex;
+    /* Flexbox pour gérer les images à l'intérieur */
+    justify-content: center;
+    /* Centre l'image horizontalement */
+    align-items: center;
+    /* Centre l'image verticalement */
+    border-radius: 10px;
+    /* Coins arrondis pour chaque conteneur */
+    background-color: #000000;
+}
+
+.image-container-double img {
+    width: 100%;
+    /* Chaque image prend 100% de la largeur de son conteneur */
+    height: 100%;
+    /* La hauteur des images prend 100% de la hauteur du conteneur */
+    object-fit: cover;
+    /* Garder les images couvertes sans déformation */
+    border-radius: 10px;
+    /* Garder les coins arrondis pour les images */
+}
+
+
+/* Quad images */
+
+.quad-image-holder-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #f5f5f5;
+    /* Optionnel : fond pour mieux visualiser */
+}
+
+.quad-image-holder {
+    display: grid;
+    grid-template-columns: repeat(2, 700px);
+    /* 2 colonnes de 696px */
+    grid-template-rows: repeat(2, 396px);
+    /* 2 rangées de 396px */
+    gap: 8px;
+    /* Espacement entre les conteneurs d'images */
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container-quad-top {
+    width: 700px;
+    /* Largeur du conteneur */
+    height: 396px;
+    /* Hauteur du conteneur */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #000000;
+    /* Fond noir pour les conteneurs */
+}
+
+.image-container-quad-top img {
+    width: 100%;
+    /* L'image prend toute la largeur */
+    height: 100%;
+    /* L'image prend toute la hauteur */
+    object-fit: cover;
+    /* Ajuste l'image sans déformation */
+    border-radius: 10px;
+    /* Coins arrondis */
+}
+
+
+/* Transition */
+
+
+/* Overlay de transition */
+
+.transition-overlay {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: #F5F5F5;
+    z-index: 2000;
+    transition: height 1s ease-in-out;
+}
+
+body.fade-in {
+    opacity: 0;
+    animation: fadeInAnimation 1s forwards;
+}
+
+@keyframes fadeInAnimation {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.content {
+    opacity: 0;
+    transition: opacity 3s ease-in-out;
+}
+
+.content.fade-in {
+    opacity: 1;
+    visibility: visible;
+}
