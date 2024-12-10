@@ -231,7 +231,7 @@ header {
     overflow: hidden;
     position: relative;
     border-radius: 10px;
-    background-color: black;
+    background-color: #EDEDED;
 }
 
 video,
@@ -240,6 +240,15 @@ img {
     height: 100%;
     object-fit: cover;
     /* Remplir le holder sans déformer */
+}
+
+.demi-video-holder {
+    width: 704px;
+    height: 792px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    background-color: #EDEDED;
 }
 
 
@@ -266,6 +275,7 @@ img {
     position: relative;
     /* Position relative pour les éléments enfants */
     gap: 8px;
+    justify-content: center;
 }
 
 .image-container-double {
@@ -283,7 +293,7 @@ img {
     /* Centre l'image verticalement */
     border-radius: 10px;
     /* Coins arrondis pour chaque conteneur */
-    background-color: #000000;
+    background-color: #EDEDED;
 }
 
 .image-container-double img {
@@ -331,7 +341,7 @@ img {
     justify-content: center;
     align-items: center;
     border-radius: 10px;
-    background-color: #000000;
+    background-color: #ededed;
     /* Fond noir pour les conteneurs */
 }
 
@@ -379,7 +389,7 @@ body.fade-in {
 
 .content {
     opacity: 0;
-    transition: opacity 3s ease-in-out;
+    transition: opacity 1.5s ease-in-out;
 }
 
 .content.fade-in {
