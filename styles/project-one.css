@@ -172,6 +172,48 @@ header {
 }
 
 
+/*Button part */
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    /* Espace de 16px entre les boutons */
+    margin: 20px;
+    padding-top: 10px;
+    /* Optionnel : espace autour des boutons */
+}
+
+.custom-button-white {
+    background-color: #ffffff;
+    /* Fond blanc */
+    padding: 10px 16px;
+    /* Padding vertical de 6px et padding latéral de 12px */
+    color: #0c0c0c;
+    /* Couleur du texte */
+    text-decoration: none;
+    /* Supprimer le soulignement du lien */
+    display: inline-block;
+    /* Permet au lien d'avoir un fond et un padding */
+    border-radius: 8px;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    /* Taille de la police et hauteur de ligne */
+    text-align: center;
+    /* Centrer le texte */
+    transition: .5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.custom-button-white:hover {
+    background-color: #0c0c0c;
+    /* Fond blanc */
+    color: #ffffff;
+    /* Couleur du texte */
+    transition: .5s cubic-bezier(0.4, 0, 0.2, 1);
+    transform: scale(1.2);
+}
+
+
 /*Texte Part */
 
 .texte {
