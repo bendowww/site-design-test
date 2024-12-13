@@ -233,6 +233,23 @@ header {
     /* Centrer horizontalement */
 }
 
+.texte-dl {
+    display: flex;
+    /* Utilisation de Flexbox */
+    flex-direction: column;
+    /* Aligner les éléments verticalement */
+    align-items: center;
+    /* Centrer le contenu horizontalement */
+    padding-top: 120px;
+    /* Espace au-dessus de la section */
+    text-align: center;
+    /* Centrer le texte */
+    max-width: 800px;
+    /* Largeur maximale pour limiter le texte */
+    margin: 0 auto;
+    /* Centrer horizontalement */
+}
+
 .texte-title {
     font-size: 1.75rem;
     line-height: 140%;

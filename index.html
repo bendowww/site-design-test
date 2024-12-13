@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Benjamin Playground</title>
     <link rel="stylesheet" href="styles/index.css">
+    <link rel="icon" href="img/favicon.png" type="image/png">
 </head>
 
 <body>
@@ -39,8 +40,8 @@
         <main>
             <!-- Div pour l'animation de couverture de l'écran -->
             <div class="transition-overlay"></div>
-            <div class="section" id="projet3">
-                <a href="view/project1.html" class="image-holder">
+            <div class="section" id="projet1">
+                <a href="view/project1.html" class="image-holder" onclick="pageTransition(event)">
                     <img src="img/Sleek-cover.png" alt="">
                 </a>
                 <div class="text-content">
@@ -63,7 +64,7 @@
             </div>
 
             <div class="section" id="projet3">
-                <a href="view/project3.html" class="image-holder">
+                <a href="view/project3.html" class="image-holder" onclick="pageTransition(event)">
                     <img src="img/Tape-Roll-top.png" alt="">
                 </a>
                 <div class="text-content">
@@ -73,7 +74,7 @@
             </div>
 
             <div class="section" id="projet4">
-                <a href="view/project4.html" class="image-holder">
+                <a href="view/project4.html" class="image-holder" onclick="pageTransition(event)">
                     <img src="img/Anchois-photo.png" alt="">
                 </a>
                 <div class="text-content">
@@ -81,6 +82,20 @@
                     <p>A family business in Port-Vendres since 1967, embodying the heritage of Mediterranean fishing.</p>
                 </div>
             </div>
+
+            <div class="section" id="projet5">
+                <a href="view/project5.html" class="image-holder" onclick="pageTransition(event)">
+                    <video src="video/Sinergy-Top.mp4" autoplay loop muted playsinline style="width: 100%; height: auto;" disablePictureInPicture>
+                        <img src="img/Sleek-cover.png" alt="Fallback Image" style="width: 100%; height: auto;">
+                        Votre navigateur ne supporte pas la lecture de vidéos.
+                    </video>
+                </a>
+                <div class="text-content">
+                    <h1>Sinergy</h1>
+                    <p>A brand that creates and organizes festivals.</p>
+                </div>
+            </div>
+
             <button id="scroll-to-top" class="scroll-to-top">
             <i data-lucide="corner-left-up"></i>
         </button>

@@ -1,0 +1,145 @@
+.section-op {
+    /* Largeur fixe de l'image */
+    width: 100%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 16px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    justify-content: center;
+    /* Centrage horizontal de la section */
+    /* Ajoute une marge de 24px en haut de la section */
+    /* Ajoute un padding en haut de la section */
+}
+
+.image-holder-op {
+    width: 1368px;
+    /* Largeur fixe */
+    height: 769px;
+    /* Hauteur fixe */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    /* Coins arrondis */
+    overflow: hidden;
+    display: inline-block;
+    /* Assure un comportement prévisible */
+    position: relative;
+    /* Nécessaire si d'autres styles sont ajoutés */
+}
+
+.image-holder-op img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    /* Supprime les marges ou espaces indésirables */
+    transition: transform 0.4s ease;
+    /* Transition fluide pour le zoom */
+    width: 100%;
+    /* Assure que l'image s'ajuste au conteneur */
+    height: auto;
+    /* Maintient les proportions de l'image */
+    /* Remplit l'espace */
+}
+
+.image-holder-op:hover img {
+    transform: scale(1.05);
+    /* Zoom de 5 % */
+}
+
+.image-holder-op video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    /* Supprime les marges ou espaces indésirables */
+    transition: transform 0.4s ease;
+    /* Transition fluide pour le zoom */
+    width: 100%;
+    /* Assure que l'image s'ajuste au conteneur */
+    height: auto;
+    /* Maintient les proportions de l'image */
+    /* Remplit l'espace */
+}
+
+.image-holder-op:hover video {
+    transform: scale(1.05);
+    /* Zoom de 5 % */
+}
+
+.text-content-op {
+    max-width: 1368px;
+    /* Alignement avec l'image */
+    width: 100%;
+    padding-left: 0;
+}
+
+.text-content-op h1 {
+    font-size: 0.875rem;
+    /* Taille du texte */
+    font-weight: 450;
+    /* Épaisseur du texte */
+    line-height: 1.125rem;
+    /* Hauteur de ligne */
+    letter-spacing: -0.004rem;
+    /* Espacement entre les lettres */
+    margin-bottom: 2px;
+    /* Ajoute un espace entre le titre et le paragraphe */
+    padding-left: 0.75rem;
+    /* Ajoute un décalage à gauche */
+}
+
+.text-content-op p {
+    font-size: 0.875rem;
+    /* Taille du texte */
+    font-weight: 375;
+    /* Épaisseur légèrement réduite */
+    line-height: 1.125rem;
+    /* Hauteur de ligne */
+    letter-spacing: -0.004rem;
+    /* Espacement entre les lettres */
+    margin-top: 0;
+    /* Supprime l'espace par défaut au-dessus */
+    color: #333;
+    /* Couleur inchangée */
+    padding-left: 0.75rem;
+    /* Ajoute un décalage à gauche */
+    max-width: 350px;
+    /* Limite la largeur du paragraphe */
+    word-wrap: break-word;
+    /* Force les mots à revenir à la ligne */
+    overflow-wrap: break-word;
+    /* Compatible avec les navigateurs modernes */
+}
+
+.texte-op {
+    display: flex;
+    /* Utilisation de Flexbox */
+    flex-direction: column;
+    /* Aligner les éléments verticalement */
+    align-items: center;
+    /* Centrer le contenu horizontalement */
+    padding-top: 120px;
+    /* Espace au-dessus de la section */
+    padding-bottom: 40px;
+    text-align: center;
+    /* Centrer le texte */
+    max-width: 800px;
+    /* Largeur maximale pour limiter le texte */
+    margin: 0 auto;
+    /* Centrer horizontalement */
+}
+
+.texte-title-op {
+    font-size: 1.75rem;
+    line-height: 140%;
+    letter-spacing: -.017rem;
+    font-weight: 450;
+    color: #000000;
+    /* Couleur principale */
+}
