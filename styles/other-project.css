@@ -5,25 +5,23 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 16px;
-    padding-top: 24px;
-    padding-bottom: 24px;
+    margin-top: 1rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
     justify-content: center;
     /* Centrage horizontal de la section */
-    /* Ajoute une marge de 24px en haut de la section */
-    /* Ajoute un padding en haut de la section */
 }
 
 .image-holder-op {
-    width: 1368px;
+    width: 85.5rem;
     /* Largeur fixe */
-    height: 769px;
+    height: 48.0625rem;
     /* Hauteur fixe */
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
-    border-radius: 10px;
+    margin-bottom: 1.25rem;
+    border-radius: 0.625rem;
     /* Coins arrondis */
     overflow: hidden;
     display: inline-block;
@@ -40,11 +38,6 @@
     /* Supprime les marges ou espaces indésirables */
     transition: transform 0.4s ease;
     /* Transition fluide pour le zoom */
-    width: 100%;
-    /* Assure que l'image s'ajuste au conteneur */
-    height: auto;
-    /* Maintient les proportions de l'image */
-    /* Remplit l'espace */
 }
 
 .image-holder-op:hover img {
@@ -60,11 +53,6 @@
     /* Supprime les marges ou espaces indésirables */
     transition: transform 0.4s ease;
     /* Transition fluide pour le zoom */
-    width: 100%;
-    /* Assure que l'image s'ajuste au conteneur */
-    height: auto;
-    /* Maintient les proportions de l'image */
-    /* Remplit l'espace */
 }
 
 .image-holder-op:hover video {
@@ -73,7 +61,7 @@
 }
 
 .text-content-op {
-    max-width: 1368px;
+    max-width: 85.5rem;
     /* Alignement avec l'image */
     width: 100%;
     padding-left: 0;
@@ -88,7 +76,7 @@
     /* Hauteur de ligne */
     letter-spacing: -0.004rem;
     /* Espacement entre les lettres */
-    margin-bottom: 2px;
+    margin-bottom: 0.125rem;
     /* Ajoute un espace entre le titre et le paragraphe */
     padding-left: 0.75rem;
     /* Ajoute un décalage à gauche */
@@ -109,7 +97,7 @@
     /* Couleur inchangée */
     padding-left: 0.75rem;
     /* Ajoute un décalage à gauche */
-    max-width: 350px;
+    max-width: 21.875rem;
     /* Limite la largeur du paragraphe */
     word-wrap: break-word;
     /* Force les mots à revenir à la ligne */
@@ -124,12 +112,12 @@
     /* Aligner les éléments verticalement */
     align-items: center;
     /* Centrer le contenu horizontalement */
-    padding-top: 120px;
+    padding-top: 7.5rem;
     /* Espace au-dessus de la section */
-    padding-bottom: 40px;
+    padding-bottom: 2.5rem;
     text-align: center;
     /* Centrer le texte */
-    max-width: 800px;
+    max-width: 50rem;
     /* Largeur maximale pour limiter le texte */
     margin: 0 auto;
     /* Centrer horizontalement */

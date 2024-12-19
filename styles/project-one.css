@@ -23,10 +23,6 @@ body {
     font-family: 'ABCOracle', sans-serif;
     background-color: #F5F5F5;
     /* Applique la couleur de fond à toute la page */
-    margin: 0;
-    /* Supprime la marge par défaut */
-    padding: 0;
-    /* Supprime le padding par défaut */
     font-family: 'ABCOracle', sans-serif;
 }
 
@@ -41,7 +37,7 @@ body {
 /*Header */
 
 header {
-    max-width: 1216px;
+    max-width: 76rem;
     width: 100%;
     text-align: center;
     margin: 0 auto;
@@ -49,8 +45,7 @@ header {
     /* Optionnel : ajoute un fond pour éviter toute transparence */
     box-sizing: border-box;
     /* Assure que padding et bordures n'affectent pas la taille */
-    padding: 10px 0;
-    /* Ajuste la hauteur si nécessaire */
+    padding: 0.625rem 0;
 }
 
 
@@ -64,11 +59,11 @@ header {
     /* Centre verticalement */
     text-align: center;
     /* Centre le texte */
-    font-size: 16px;
+    font-size: 1rem;
     /* Taille de la police */
     color: #999;
     /* Couleur du texte */
-    padding: 120px 0 24px;
+    padding: 7.5rem 0 1.5rem;
 }
 
 
@@ -79,10 +74,9 @@ header {
     justify-content: flex-end;
     align-items: center;
     margin: 0 auto;
-    max-width: 1216px;
+    max-width: 76rem;
     width: 100%;
     padding-top: 1.5rem;
-    /* Reduced from 1.5rem */
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -91,8 +85,8 @@ header {
 .nav-links a {
     text-decoration: none;
     color: #ededed;
-    margin-left: 20px;
-    font-size: 16px;
+    margin-left: 1.25rem;
+    font-size: 1rem;
 }
 
 .header-nav {
@@ -101,26 +95,25 @@ header {
     /* Aligne les éléments à droite */
     align-items: center;
     /* Centre les liens verticalement par rapport à la hauteur du paragraphe */
-    gap: 4px;
+    gap: 0.25rem;
     /* Espace entre les liens */
     background-color: #ffffff;
-    padding: 4px;
-    border-radius: 10px;
-    margin-right: 20px;
+    padding: 0.25rem;
+    border-radius: 0.625rem;
+    margin-right: 1.25rem;
 }
 
 #work {
     background-color: #ffffff;
     /* Fond blanc */
-    padding: 6px 12px;
-    /* Padding vertical de 6px et padding latéral de 12px */
+    padding: 0.375rem 0.75rem;
     color: #545454;
     /* Couleur du texte */
     text-decoration: none;
     /* Supprimer le soulignement du lien */
     display: inline-block;
     /* Permet au lien d'avoir un fond et un padding */
-    border-radius: 8px;
+    border-radius: 0.5rem;
     font-size: .875rem;
     line-height: 1.25rem;
 }
@@ -141,15 +134,15 @@ header {
     /* Aligner les éléments verticalement */
     align-items: center;
     /* Centrer le contenu horizontalement */
-    padding-top: 120px;
+    padding-top: 7.5rem;
     /* Espace au-dessus de la section */
     text-align: center;
     /* Centrer le texte */
-    max-width: 800px;
+    max-width: 50rem;
     /* Largeur maximale pour limiter le texte */
     margin: 0 auto;
     /* Centrer horizontalement */
-    padding-bottom: 30px;
+    padding-bottom: 1.875rem;
 }
 
 .hero-title {
@@ -166,8 +159,8 @@ header {
     line-height: 150%;
     letter-spacing: -.00625rem;
     font-weight: 350;
-    max-width: 520px;
-    padding-top: 16px;
+    max-width: 32.5rem;
+    padding-top: 1rem;
     color: #545454;
 }
 
@@ -177,25 +170,24 @@ header {
 .button-container {
     display: flex;
     justify-content: center;
-    gap: 16px;
+    gap: 1rem;
     /* Espace de 16px entre les boutons */
-    margin: 20px;
-    padding-top: 10px;
+    margin: 1.25rem;
+    padding-top: 0.625rem;
     /* Optionnel : espace autour des boutons */
 }
 
 .custom-button-white {
     background-color: #ffffff;
     /* Fond blanc */
-    padding: 10px 16px;
-    /* Padding vertical de 6px et padding latéral de 12px */
+    padding: 0.625rem 1rem;
     color: #0c0c0c;
     /* Couleur du texte */
     text-decoration: none;
     /* Supprimer le soulignement du lien */
     display: inline-block;
     /* Permet au lien d'avoir un fond et un padding */
-    border-radius: 8px;
+    border-radius: 0.5rem;
     font-size: 1rem;
     line-height: 1.25rem;
     /* Taille de la police et hauteur de ligne */
@@ -206,9 +198,7 @@ header {
 
 .custom-button-white:hover {
     background-color: #0c0c0c;
-    /* Fond blanc */
     color: #ffffff;
-    /* Couleur du texte */
     transition: .5s cubic-bezier(0.4, 0, 0.2, 1);
     transform: scale(1.2);
 }
@@ -223,11 +213,11 @@ header {
     /* Aligner les éléments verticalement */
     align-items: center;
     /* Centrer le contenu horizontalement */
-    padding: 120px 0;
+    padding: 7.5rem 0;
     /* Espace au-dessus de la section */
     text-align: center;
     /* Centrer le texte */
-    max-width: 800px;
+    max-width: 50rem;
     /* Largeur maximale pour limiter le texte */
     margin: 0 auto;
     /* Centrer horizontalement */
@@ -240,11 +230,11 @@ header {
     /* Aligner les éléments verticalement */
     align-items: center;
     /* Centrer le contenu horizontalement */
-    padding-top: 120px;
+    padding-top: 7.5rem;
     /* Espace au-dessus de la section */
     text-align: center;
     /* Centrer le texte */
-    max-width: 800px;
+    max-width: 50rem;
     /* Largeur maximale pour limiter le texte */
     margin: 0 auto;
     /* Centrer horizontalement */
@@ -264,8 +254,8 @@ header {
     line-height: 150%;
     letter-spacing: -.00625rem;
     font-weight: 350;
-    max-width: 520px;
-    padding-top: 16px;
+    max-width: 32.5rem;
+    padding-top: 1rem;
     color: #000000;
 }
 
@@ -279,17 +269,17 @@ header {
     /* Centrer horizontalement */
     align-items: center;
     /* Centrer verticalement si nécessaire */
-    padding: 20px;
+    padding: 1.25rem;
     /* Espacement autour de la section */
 }
 
 .video-holder,
 .image-holder {
-    width: 1408px;
-    height: 792px;
+    width: 88rem;
+    height: 49.5rem;
     overflow: hidden;
     position: relative;
-    border-radius: 10px;
+    border-radius: 0.625rem;
     background-color: #EDEDED;
 }
 
@@ -302,11 +292,11 @@ img {
 }
 
 .demi-video-holder {
-    width: 704px;
-    height: 792px;
+    width: 44rem;
+    height: 49.5rem;
     overflow: hidden;
     position: relative;
-    border-radius: 10px;
+    border-radius: 0.625rem;
     background-color: #EDEDED;
 }
 
@@ -320,7 +310,7 @@ img {
     /* Centrer les conteneurs horizontalement */
     align-items: center;
     /* Centrer les images verticalement */
-    gap: 24px;
+    gap: 0.5rem;
     /* Espacement entre les conteneurs d'images */
 }
 
@@ -329,16 +319,16 @@ img {
     /* Utilisation de flexbox pour que les conteneurs d'images s'alignent horizontalement */
     width: 100%;
     /* Largeur complète du conteneur parent */
-    height: 792px;
+    height: 49.5rem;
     /* Hauteur du conteneur */
     position: relative;
     /* Position relative pour les éléments enfants */
-    gap: 8px;
+    gap: 0.5rem;
     justify-content: center;
 }
 
 .image-container-double {
-    width: 700px;
+    width: 43.75rem;
     /* Chaque conteneur d'image occupe 50% de la largeur du parent */
     height: 100%;
     /* La hauteur des images prend 100% de la hauteur du conteneur */
@@ -350,7 +340,7 @@ img {
     /* Centre l'image horizontalement */
     align-items: center;
     /* Centre l'image verticalement */
-    border-radius: 10px;
+    border-radius: 0.625rem;
     /* Coins arrondis pour chaque conteneur */
     background-color: #EDEDED;
 }
@@ -362,7 +352,7 @@ img {
     /* La hauteur des images prend 100% de la hauteur du conteneur */
     object-fit: cover;
     /* Garder les images couvertes sans déformation */
-    border-radius: 10px;
+    border-radius: 0.625rem;
     /* Garder les coins arrondis pour les images */
 }
 
@@ -373,35 +363,34 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 1.25rem;
     background-color: #f5f5f5;
     /* Optionnel : fond pour mieux visualiser */
 }
 
 .quad-image-holder {
     display: grid;
-    grid-template-columns: repeat(2, 700px);
+    grid-template-columns: repeat(2, 43.75rem);
     /* 2 colonnes de 696px */
-    grid-template-rows: repeat(2, 396px);
+    grid-template-rows: repeat(2, 24.75rem);
     /* 2 rangées de 396px */
-    gap: 8px;
+    gap: 0.5rem;
     /* Espacement entre les conteneurs d'images */
     justify-content: center;
     align-items: center;
 }
 
 .image-container-quad-top {
-    width: 700px;
+    width: 43.75rem;
     /* Largeur du conteneur */
-    height: 396px;
+    height: 24.75rem;
     /* Hauteur du conteneur */
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 10px;
+    border-radius: 0.625rem;
     background-color: #ededed;
-    /* Fond noir pour les conteneurs */
 }
 
 .image-container-quad-top img {
@@ -411,7 +400,7 @@ img {
     /* L'image prend toute la hauteur */
     object-fit: cover;
     /* Ajuste l'image sans déformation */
-    border-radius: 10px;
+    border-radius: 0.625rem;
     /* Coins arrondis */
 }
 

@@ -18,3 +18,169 @@
 </body>
 
 </html>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benjamin Playground</title>
+    <meta name="description" content="Benjamin is a designer specializing in creating marketing websites, motion graphics, and 3D visuals.">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <link rel="alternate" hreflang="en" href="index-en.html" />
+    <link rel="alternate" hreflang="fr" href="index-fr.html" />
+    <link rel="alternate" hreflang="x-default" href="index-en.html" />
+</head>
+
+<body>
+    <div class="content">
+        <header>
+            <div class="navbar">
+                <div class="site-title">
+                    <span class="first-word">Benjamin</span> is a designer specializing in creating marketing websites, motion graphics, and 3D visuals.
+                </div>
+                <nav class="header-nav">
+                    <a href="#work" id="work">Work</a>
+                    <a href="#contact" id="contact">Contact</a>
+                </nav>
+            </div>
+            <div id="contact-box" class="contact-box">
+                <div class="contact-content">
+                    <p class="mail-word">Email</p>
+                    <p class="mail-copy">btirmant31@gmail.com</p>
+                    <p class="copy-tooltip">Click to Copy</p>
+                    <div class="social-links">
+                        <a class="contact-p" href="https://www.behance.net/Rauw">Behance</a>
+                        <a class="contact-p" href="https://www.linkedin.com/in/benjamin-tirmant/">Linkedin</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Le fond noir avec blur -->
+            <div id="overlay" class="overlay"></div>
+        </header>
+        <main>
+            <!-- Div pour l'animation de couverture de l'écran -->
+            <div class="transition-overlay"></div>
+            <div class="section" id="projet1">
+                <a href="view-en/project1.html" class="image-holder" onclick="pageTransition(event)">
+                    <img src="img/Sleek-cover.png" alt="">
+                </a>
+                <div class="text-content">
+                    <h1>Sleek</h1>
+                    <p>A design agency based in <br> the south of France.</p>
+                </div>
+            </div>
+
+            <div class="section" id="projet2">
+                <a href="view-en/project2.html" class="image-holder" onclick="pageTransition(event)">
+                    <video src="video/Memoire-top-.mp4" autoplay loop muted playsinline style="width: 100%; height: auto;" disablePictureInPicture>
+                    <img src="img/Sleek-cover.png" alt="Fallback Image" style="width: 100%; height: auto;">
+                    Votre navigateur ne supporte pas la lecture de vidéos.
+                </video>
+                </a>
+                <div class="text-content">
+                    <h1>Techno music memory</h1>
+                    <p>Personal project completed during my final year of higher education</p>
+                </div>
+            </div>
+
+            <div class="section" id="projet3">
+                <a href="view-en/project3.html" class="image-holder" onclick="pageTransition(event)">
+                    <img src="img/Tape-Roll-top.png" alt="">
+                </a>
+                <div class="text-content">
+                    <h1>Tape Roll</h1>
+                    <p>Rendered image to create promotional visuals for a roll of tape.</p>
+                </div>
+            </div>
+
+            <div class="section" id="projet4">
+                <a href="view-en/project4.html" class="image-holder" onclick="pageTransition(event)">
+                    <img src="img/Anchois-photo.png" alt="">
+                </a>
+                <div class="text-content">
+                    <h1>Anxoves Del Padri</h1>
+                    <p>A family business in Port-Vendres since 1967, embodying the heritage of Mediterranean fishing.</p>
+                </div>
+            </div>
+
+            <div class="section" id="projet5">
+                <a href="view-en/project5.html class=" image-holder " onclick="pageTransition(event) ">
+                    <video src="video/Sinergy-Top.mp4 " autoplay loop muted playsinline style="width: 100%; height: auto; " disablePictureInPicture>
+                        <img src="img/Sleek-cover.png " alt="Fallback Image " style="width: 100%; height: auto; ">
+                        Votre navigateur ne supporte pas la lecture de vidéos.
+                    </video>
+                </a>
+                <div class="text-content ">
+                    <h1>Sinergy</h1>
+                    <p>A brand that creates and organizes festivals.</p>
+                </div>
+            </div>
+
+            <div class="section " id="projet6 ">
+                <a href="view-en/project6.html " class="image-holder " onclick="pageTransition(event) ">
+                    <video src="video/Chair-Top.mp4 " autoplay loop muted playsinline style="width: 100%; height: auto; " disablePictureInPicture>
+                        <img src="img/Sleek-cover.png " alt="Fallback Image " style="width: 100%; height: auto; ">
+                        Votre navigateur ne supporte pas la lecture de vidéos.
+                    </video>
+                </a>
+                <div class="text-content ">
+                    <h1>Again barstool by TON</h1>
+                    <p>Wooden designer chairs and tables. Handcrafted for generations.</p>
+                </div>
+            </div>
+
+            <button id="scroll-to-top " class="scroll-to-top ">
+                <i data-lucide="corner-left-up "></i>
+            </button>
+            <footer class="footer ">
+                <p>You've reached the end</p>
+            </footer>
+        </main>
+        <script src="script/index.js "></script>
+        <script src="script/scroll.js "></script>
+        <script src="script/transition.js "></script>
+        <script src="https://unpkg.com/lucide@latest "></script>
+        <script>
+            lucide.createIcons();
+        </script>
+    </div>
+</body>
+
+</html>
+
+
+
+<!-- Video Holder 
+
+<div class="section " id="projet1 ">
+    <a href="view/project1.html " class="image-holder " onclick="pageTransition(event) ">
+        <video src="video/Showréel avec son.mp4 " autoplay loop muted playsinline style="width: 100%; height: auto; " disablePictureInPicture>
+        <img src="img/Sleek-cover.png " alt="Fallback Image " style="width: 100%; height: auto; ">
+        Votre navigateur ne supporte pas la lecture de vidéos.
+    </video>
+    </a>
+    <div class="text-content ">
+        <h1>Showréel</h1>
+        <p>Ceci est un paragraphe exemple qui présente mon showréel. Quel Banger !</p>
+    </div>
+</div>
+-->
+
+<!--  Image Holder
+
+<div class="section " id="projet2 ">
+    <a href="view/project1.html " class="image-holder ">
+        <img src="image ici " alt=" ">
+    </a>
+    <div class="text-content ">
+        <h1>Titre de la Section</h1>
+        <p>Ceci est un paragraphe exemple. Vous pouvez le remplacer par le contenu de votre choix.</p>
+    </div>
+</div>
+
+.
+        -->
