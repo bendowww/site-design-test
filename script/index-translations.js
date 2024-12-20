@@ -35,8 +35,7 @@ async function updateContent(language) {
         document.querySelector('.project-anchois-description').textContent = polyglot.t('project-anchois-description');
         document.querySelector('.project-sinergy-description').textContent = polyglot.t('project-sinergy-description');
         document.querySelector('.project-barstool-description').textContent = polyglot.t('project-barstool-description');
-        document.querySelector('.scroll-to-top').textContent = polyglot.t('scroll_to_top');
-        document.querySelector('.footer-message').textContent = polyglot.t('footer_message');
+        document.querySelector('.footer-message').textContent = polyglot.t('footer-message');
 
         // Remettre le fade-in
         content.classList.remove('fade-out');
@@ -51,3 +50,13 @@ document.getElementById('language-selector').addEventListener('change', (event) 
 
 // Charger la langue par défaut
 updateContent('en');
+
+document.getElementById('language-selector').addEventListener('change', (event) => {
+    const selectedLanguage = event.target.value;
+    localStorage.setItem('preferredLanguage', selectedLanguage); // Stocke la langue choisie
+    updateContent(selectedLanguage); // Met à jour le contenu
+});
+
+// Charger la langue par défaut ou celle stockée
+const storedLanguage = localStorage.getItem('preferredLanguage') || 'en'; // Langue par défaut : anglais
+updateContent(storedLanguage);
