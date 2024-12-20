@@ -17,9 +17,13 @@
                     <span class="first-word">Benjamin</span> is a designer specializing in creating marketing websites, motion graphics, and 3D visuals.
                 </div>
                 <nav class="header-nav">
-                    <a href="#work" id="work">Work</a>
-                    <a href="#contact" id="contact">Contact</a>
-                    <a id="search" href="#search"><i data-lucide="search"></i></a>
+                    <a href="#work" class="work" id="work">Work</a>
+                    <a href="#contact" class="contact" id="contact">Contact</a>
+                    <select id="language-selector">
+                        <option value="en">En</option>
+                        <option value="fr">Fr</option>
+                        <option value="es">Es</option>
+                    </select>
                 </nav>
             </div>
             <div id="contact-box" class="contact-box">
@@ -46,7 +50,7 @@
                 </a>
                 <div class="text-content">
                     <h1>Sleek</h1>
-                    <p>A design agency based in <br> the south of France.</p>
+                    <p class="project-sleek-description">A design agency based in <br> the south of France.</p>
                 </div>
             </div>
 
@@ -59,7 +63,7 @@
                 </a>
                 <div class="text-content">
                     <h1>Techno music memory</h1>
-                    <p>Personal project completed during my final year of higher education</p>
+                    <p class="project-techno-description">Personal project completed during my final year of higher education</p>
                 </div>
             </div>
 
@@ -69,7 +73,7 @@
                 </a>
                 <div class="text-content">
                     <h1>Tape Roll</h1>
-                    <p>Rendered image to create promotional visuals for a roll of tape.</p>
+                    <p class="project-tape-roll-description">Rendered image to create promotional visuals for a roll of tape.</p>
                 </div>
             </div>
 
@@ -79,7 +83,7 @@
                 </a>
                 <div class="text-content">
                     <h1>Anxoves Del Padri</h1>
-                    <p>A family business in Port-Vendres since 1967, embodying the heritage of Mediterranean fishing.</p>
+                    <p class="project-anchois-description">A family business in Port-Vendres since 1967, embodying the heritage of Mediterranean fishing.</p>
                 </div>
             </div>
 
@@ -92,7 +96,7 @@
                 </a>
                 <div class="text-content">
                     <h1>Sinergy</h1>
-                    <p>A brand that creates and organizes festivals.</p>
+                    <p class="project_sinergy_description">A brand that creates and organizes festivals.</p>
                 </div>
             </div>
 
@@ -105,9 +109,10 @@
                 </a>
                 <div class="text-content">
                     <h1>Again barstool by TON</h1>
-                    <p>Wooden designer chairs and tables. Handcrafted for generations.</p>
+                    <p class="project-barstool-description">Wooden designer chairs and tables. Handcrafted for generations.</p>
                 </div>
             </div>
+
 
             <button id="scroll-to-top" class="scroll-to-top">
             <i data-lucide="corner-left-up"></i>
@@ -119,6 +124,7 @@
         <script src="script/index.js"></script>
         <script src="script/scroll.js"></script>
         <script src="script/transition.js"></script>
+        <script type="module" src="script/index-translations.js"></script>
         <script src="https://unpkg.com/lucide@latest"></script>
         <script>
             lucide.createIcons();

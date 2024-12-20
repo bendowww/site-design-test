@@ -89,11 +89,10 @@ header {
 }
 
 #work {
-    background-color: #EDEDED;
     /* Fond blanc */
     padding: 0.375rem 0.75rem;
     /* Padding vertical de 6px et padding latéral de 12px */
-    color: #333;
+    color: #545454;
     text-decoration: none;
     /* Supprimer le soulignement du lien */
     display: inline-block;
@@ -101,6 +100,12 @@ header {
     border-radius: 0.5rem;
     font-size: 0.875rem;
     line-height: 1.25rem;
+}
+
+#work:hover {
+    background-color: #EDEDED;
+    transition: .5s;
+    color: #000000;
 }
 
 #contact {
@@ -114,26 +119,40 @@ header {
     line-height: 1.25rem;
 }
 
-#search {
-    padding: 0.375rem 0.75rem;
-    text-decoration: none;
-}
-
 #contact:hover {
+    background-color: #EDEDED;
+    transition: .5s;
     color: #000000;
-    transition: 1s;
 }
 
-[data-lucide="search"] {
-    stroke: #545454;
-    stroke-width: 0.125rem;
-    width: .5rem;
-    display: flex;
+
+/*language switcher */
+
+#language-selector {
+    position: relative;
+    background-color: #ffffff;
+    padding: 0.375rem 0.75rem;
+    color: #545454;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    appearance: none;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: right 0.75rem center;
+    background-size: 0.65em auto;
+    border-radius: 0.5rem;
+    border: none;
+    /* Supprime la bordure */
+    outline: none;
+    /* Supprime le contour lors du focus */
 }
 
-[data-lucide="search"]:hover {
-    stroke: #000000;
-    transition: 1s;
+#language-selector:hover {
+    background-color: #EDEDED;
+    transition: .5s;
+    color: #000000;
 }
 
 .header-nav a {
@@ -160,7 +179,7 @@ header {
     margin-bottom: 0;
     text-align: left;
     color: #333;
-    max-width: 20.9375rem;
+    max-width: 24.9rem;
     margin-left: 1.25rem;
 }
 
@@ -464,6 +483,38 @@ header {
 body.fade-in {
     opacity: 0;
     animation: fadeInAnimation 1s forwards;
+}
+
+
+/*Transition Langues */
+
+
+/* Classe pour appliquer un effet de disparition */
+
+
+/* Effet de fade-out (disparition) */
+
+.fade-out {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    /* Durée et effet de la transition */
+}
+
+
+/* Effet de fade-in (apparition) */
+
+.fade-in {
+    opacity: 1;
+    transition: opacity 0.5s ease;
+    /* Durée et effet de la transition */
+}
+
+
+/* Conteneur principal (pour s'assurer que l'effet s'applique à tous les éléments) */
+
+.content {
+    opacity: 1;
+    /* Par défaut visible */
 }
 
 @keyframes fadeInAnimation {
