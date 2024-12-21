@@ -28,8 +28,6 @@ contactButton.addEventListener('click', function(event) {
         const boxTop = rect.bottom + scrollTop + 24; // Alignement en bas du bouton avec un padding de 24px
 
         // Appliquer les styles pour positionner la boîte
-        contactBox.style.top = boxTop + "px";
-        contactBox.style.left = buttonCenterX - boxHalfWidth + "px";
 
         contactBox.style.display = 'block'; // Afficher avant d'ajouter la classe `show`
         setTimeout(() => {
