@@ -444,3 +444,255 @@ body.fade-in {
     opacity: 1;
     visibility: visible;
 }
+
+
+/*Responsive Tel */
+
+@media (max-width: 48rem) and (hover: none) and (pointer: coarse) {
+    .navbar {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin: 0 auto;
+        max-width: 375px;
+        width: 100%;
+        padding-top: 1.5rem;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+    .header-nav {
+        display: flex;
+        justify-content: flex-end;
+        /* Aligne les éléments à droite */
+        align-items: center;
+        /* Centre les liens verticalement par rapport à la hauteur du paragraphe */
+        gap: 0.25rem;
+        /* Espace entre les liens */
+        background-color: #ffffff;
+        padding: 0.25rem;
+        border-radius: 0.625rem;
+        margin-right: 1.25rem;
+    }
+    /* Hero part */
+    .hero {
+        display: flex;
+        /* Utilisation de Flexbox */
+        flex-direction: column;
+        /* Aligner les éléments verticalement */
+        align-items: center;
+        /* Centrer le contenu horizontalement */
+        padding-top: 7.5rem;
+        /* Espace au-dessus de la section */
+        text-align: center;
+        /* Centrer le texte */
+        max-width: 375px;
+        /* Largeur maximale pour limiter le texte */
+        margin: 0 auto;
+        /* Centrer horizontalement */
+        padding-bottom: 1.875rem;
+    }
+    .hero-title {
+        font-size: 1.5rem;
+        line-height: 140%;
+        letter-spacing: -.02rem;
+        font-weight: 450;
+        color: #000000;
+        /* Couleur principale */
+    }
+    .hero-subtitle {
+        font-size: 1rem;
+        line-height: 150%;
+        letter-spacing: -.00625rem;
+        font-weight: 350;
+        max-width: 320px;
+        padding-top: 1rem;
+        color: #545454;
+    }
+    /*Texte Part */
+    .texte {
+        display: flex;
+        /* Utilisation de Flexbox */
+        flex-direction: column;
+        /* Aligner les éléments verticalement */
+        align-items: center;
+        /* Centrer le contenu horizontalement */
+        padding: 3rem 0;
+        /* Espace au-dessus de la section */
+        text-align: center;
+        /* Centrer le texte */
+        max-width: 320px;
+        /* Largeur maximale pour limiter le texte */
+        margin: 0 auto;
+        /* Centrer horizontalement */
+    }
+    .texte-dl {
+        display: flex;
+        /* Utilisation de Flexbox */
+        flex-direction: column;
+        /* Aligner les éléments verticalement */
+        align-items: center;
+        /* Centrer le contenu horizontalement */
+        padding-top: 5rem;
+        /* Espace au-dessus de la section */
+        text-align: center;
+        /* Centrer le texte */
+        max-width: 50rem;
+        /* Largeur maximale pour limiter le texte */
+        margin: 0 auto;
+        /* Centrer horizontalement */
+    }
+    .custom-button-white {
+        font-size: .875rem;
+    }
+    .texte-title {
+        font-size: 1.2rem;
+        line-height: 140%;
+        letter-spacing: -.017rem;
+        font-weight: 450;
+        color: #000000;
+        /* Couleur principale */
+    }
+    .texte-subtitle {
+        font-size: .875rem;
+        line-height: 150%;
+        letter-spacing: -.00625rem;
+        font-weight: 350;
+        max-width: 320px;
+        padding-top: .5rem;
+        color: #000000;
+    }
+    /* Image et video Holder */
+    .video-holder-section,
+    .image-holder-section {
+        display: flex;
+        justify-content: center;
+        /* Centrer horizontalement */
+        align-items: center;
+        /* Centrer verticalement si nécessaire */
+        padding: 0;
+    }
+    .video-holder,
+    .image-holder {
+        width: 350px;
+        height: 197px;
+        overflow: hidden;
+        position: relative;
+        border-radius: 0.325rem;
+        background-color: #EDEDED;
+    }
+    video,
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        /* Remplir le holder sans déformer */
+    }
+    /* Double image holder */
+    .demi-video-holder {
+        width: 171px;
+        height: 192px;
+        overflow: hidden;
+        position: relative;
+        border-radius: 0.325rem;
+        background-color: #EDEDED;
+    }
+    .double-image-holder-section {
+        display: flex;
+        /* Utilise flexbox pour aligner les conteneurs côte à côte */
+        justify-content: center;
+        /* Centrer les conteneurs horizontalement */
+        align-items: center;
+        /* Centrer les images verticalement */
+        gap: 0.5rem;
+        /* Espacement entre les conteneurs d'images */
+    }
+    .double-image-holder {
+        display: flex;
+        /* Utilisation de flexbox pour que les conteneurs d'images s'alignent horizontalement */
+        width: 100%;
+        /* Largeur complète du conteneur parent */
+        height: 192px;
+        /* Hauteur du conteneur */
+        position: relative;
+        /* Position relative pour les éléments enfants */
+        gap: 0.5rem;
+        justify-content: center;
+    }
+    .image-container-double {
+        width: 171px;
+        /* Chaque conteneur d'image occupe 50% de la largeur du parent */
+        height: 100%;
+        /* La hauteur des images prend 100% de la hauteur du conteneur */
+        overflow: hidden;
+        /* Cache les débordements */
+        display: flex;
+        /* Flexbox pour gérer les images à l'intérieur */
+        justify-content: center;
+        /* Centre l'image horizontalement */
+        align-items: center;
+        /* Centre l'image verticalement */
+        border-radius: 0.625rem;
+        /* Coins arrondis pour chaque conteneur */
+        background-color: #EDEDED;
+    }
+    .image-container-double img {
+        width: 100%;
+        /* Chaque image prend 100% de la largeur de son conteneur */
+        height: 100%;
+        /* La hauteur des images prend 100% de la hauteur du conteneur */
+        object-fit: cover;
+        /* Garder les images couvertes sans déformation */
+        border-radius: 0.625rem;
+        /* Garder les coins arrondis pour les images */
+    }
+    .content {
+        max-width: 375px;
+    }
+    .footer {
+        font-size: 0.875rem;
+        padding-top: 3rem;
+    }
+    /* Quad images */
+    .quad-image-holder-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1.25rem;
+        background-color: #f5f5f5;
+        /* Optionnel : fond pour mieux visualiser */
+    }
+    .quad-image-holder {
+        display: grid;
+        grid-template-columns: repeat(2, 171px);
+        /* 2 colonnes de 696px */
+        grid-template-rows: repeat(2, 96px);
+        /* 2 rangées de 396px */
+        gap: 0.5rem;
+        /* Espacement entre les conteneurs d'images */
+        justify-content: center;
+        align-items: center;
+    }
+    .image-container-quad-top {
+        width: 171px;
+        /* Largeur du conteneur */
+        height: 96px;
+        /* Hauteur du conteneur */
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0.325rem;
+        background-color: #ededed;
+    }
+    .image-container-quad-top img {
+        width: 100%;
+        /* L'image prend toute la largeur */
+        height: 100%;
+        /* L'image prend toute la hauteur */
+        object-fit: cover;
+        /* Ajuste l'image sans déformation */
+        border-radius: 0.325rem;
+        /* Coins arrondis */
+    }
+}

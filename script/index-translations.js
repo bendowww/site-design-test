@@ -27,6 +27,7 @@ async function updateContent(language) {
         document.querySelector('.site-title').textContent = polyglot.t('site-title');
         document.querySelector('.work').textContent = polyglot.t('work');
         document.querySelector('.contact').textContent = polyglot.t('contact');
+        document.querySelector('.mail-word').textContent = polyglot.t('mail-word');
         document.querySelector('.mail-copy').textContent = polyglot.t('mail-copy');
         document.querySelector('.copy-tooltip').textContent = polyglot.t('copy-tooltip');
         document.querySelector('.project-sleek-description').textContent = polyglot.t('project-sleek-description');
