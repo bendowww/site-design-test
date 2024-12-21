@@ -132,7 +132,7 @@
     /* Couleur principale */
 }
 
-@media (max-width: 48rem) and (hover: none) and (pointer: coarse) {
+@media (max-width: 80rem) and (hover: none) and (pointer: coarse) {
     .section-op {
         max-width: 23.4375rem;
         width: 100%;

@@ -448,7 +448,7 @@ body.fade-in {
 
 /*Responsive Tel */
 
-@media (max-width: 48rem) and (hover: none) and (pointer: coarse) {
+@media (max-width: 80rem) and (hover: none) and (pointer: coarse) {
     .navbar {
         display: flex;
         justify-content: flex-end;
