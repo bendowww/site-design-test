@@ -1,0 +1,31 @@
+name: Deploy to OVH
+
+on:
+  push:
+    branches:
+      - main  # Branche déclenchant le déploiement
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Install FTP client
+      run: sudo apt-get install -y ftp lftp
+
+    - name: Deploy to OVH via FTP
+      env:
+        FTP_HOST: ${{ secrets.FTP_HOST }}
+        FTP_PORT: ${{ secrets.FTP_PORT }}
+        FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
+        FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+      run: |
+        lftp -c "
+        open -u $FTP_USERNAME,$FTP_PASSWORD $FTP_HOST;
+        set ftp:port $FTP_PORT;
+        mirror -R ./ /www;  # Remplace /www par ton dossier cible OVH
+        bye;
+        "
